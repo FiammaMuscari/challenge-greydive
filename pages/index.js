@@ -21,7 +21,7 @@ export default function Home({ data }) {
           {data.map(test => {
             return (
               <button key={test.idVideo} className='bg-[#d4145a] rounded px-4 py-1 hover:bg-[#BE1251]'>
-                <Link href={`/${test.cliente}`}>{test.cliente}</Link>
+                <Link href={`/client/${test.cliente}`}>{test.cliente}</Link>
               </button>
             )
           })}
