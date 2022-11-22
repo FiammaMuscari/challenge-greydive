@@ -14,13 +14,13 @@ export default function Home({ data }) {
 
       <main className='min-h-screen flex flex-col justify-center items-center gap-3'>
         <h1 className={styles.title}>¡Bienvenido!</h1>
-        <h3>Elige al cliente a testear</h3>
+        <h3>Elige el cliente a testear</h3>
         <div className='gap-4 grid'>
 
           <div className='flex gap-8 justify-center'>
           {data.map(test => {
             return (
-              <button key={test.idVideo} className='bg-[#d4145a] rounded px-4 py-1 hover:bg-[#BE1251]'>
+              <button key={test.idVideo} className='bg-[#d4145a] rounded-lg p-4 shadow-lg px-4 py-1 hover:bg-[#BE1251]'>
                 <Link href={`/client/${test.cliente}`}>{test.cliente}</Link>
               </button>
             )

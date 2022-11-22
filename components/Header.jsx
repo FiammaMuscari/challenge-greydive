@@ -6,14 +6,14 @@ import Image from 'next/image'
 export const Header = (props) => {
 
   return (
-    <div className="flex justify-between mx-32">
+    <div className="flex justify-between 2xl:px-32 xl:px-32 lg:px-32 md:px-8 sm:px-8  py-11">
         <Link href="/">
             <Image src="/simulacr.png" alt="" width="150" height="100" />
         </Link>
       <div className='flex gap-4'>
           {database.map((db) => {
           return (
-              <Link href={`/client/${db.cliente}`} key={db.idVideo} className='hover:text-[#d4145a]'>
+              <Link href={`/client/${db.cliente}`} key={db.idVideo} className='hover:text-[#d4145a] text-2xl'>
                 {db.cliente}
               </Link>
               );
